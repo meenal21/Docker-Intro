@@ -26,7 +26,7 @@ docker run -d <imagename>
 This command will return the container ID.
 ```
 docker run -d --name <name of your choice> <image name>
-
+```
 #### To restart the docker container:
 ```
 docker stop <container ID>
