@@ -36,3 +36,16 @@ After
 - Layer of images
 - The base one is Linux Base Image - small in size (mostly alpine)
 - on top of linux - application image - has layers in between
+- Running environment of image
+- Has port binded to it 
+- own abstraction of OS and fileSystem
+
+### Container Ports vs Host Ports
+
+We saw that for an application of two different versions, they were listening to the same port, so how can we resolve conflict?
+
+We bind the host port to the container port. There will be a conflict if same port on the Host Machine is opened.
+
+So, if two containers are listening to same port, they have to be bound to two different host ports!
+
+
